@@ -8,8 +8,8 @@ public class TestLavadora {
 
 	@Test
 	public void test_carga_frontal() {
-		
-		Lavadora lavadora = new LavadoraCargaFrontal();
+		//implementar factory method
+		Lavadora lavadora = null;
 		lavadora.ponerMandos();
 		lavadora.ponerTambor();
 		
@@ -20,8 +20,8 @@ public class TestLavadora {
 
 	@Test
 	public void test_carga_superior() {
-		
-		Lavadora lavadora = new LavadoraCargaSuperior();
+		//implementar factory method
+		Lavadora lavadora = null;
 		lavadora.ponerMandos();
 		lavadora.ponerTambor();
 		
