@@ -6,10 +6,14 @@ import org.junit.Test;
 
 public class TestLavadora {
 
+	private LavadoraFactory lavadoraFact = new LavadoraFactory();
+	
 	@Test
 	public void test_carga_frontal() {
 		//implementar factory method
-		Lavadora lavadora = null;
+		
+		Lavadora lavadora = lavadoraFact.createLavadora("frontal");
+	
 		lavadora.ponerMandos();
 		lavadora.ponerTambor();
 		
@@ -21,7 +25,9 @@ public class TestLavadora {
 	@Test
 	public void test_carga_superior() {
 		//implementar factory method
-		Lavadora lavadora = null;
+		
+		Lavadora lavadora = lavadoraFact.createLavadora("superior");
+		
 		lavadora.ponerMandos();
 		lavadora.ponerTambor();
 		
